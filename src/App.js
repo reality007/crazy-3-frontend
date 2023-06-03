@@ -1,26 +1,13 @@
-
-import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import Header from './components/Header';
-import Signup from './components/Signup';
-import Login from './components/Login';
-import Welcome from './components/Welcome';
+import { Provider } from 'react-redux';
+import RouteService from './RouteService';
+import Store from './Redux/Store/Store';
 
 function App() {
   return (
-    <>
-    <header>
-      <Header/>
-    </header>
-    <main>
-      <Routes>
-        <Route path='/login' element = {<Login/>}/>
-        <Route path='/Signup' element = {<Signup/>}/>
-        <Route path='/user' element = {<Welcome/>}/>
-      </Routes>
-    </main>
-    </>
-  )
-}
-
+    <Provider store={Store}>
+      <RouteService/>
+    </Provider>
+    )}
+    
 export default App;
