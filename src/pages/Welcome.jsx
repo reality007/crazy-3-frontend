@@ -28,4 +28,4 @@ return(
   
 }
 
-export default Welcome
+export default Welcome;
