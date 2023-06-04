@@ -17,9 +17,7 @@ const handleLogOut=()=>{
 
 return(
   <div>
-    this is Welcome
-
-    <Button onClick={handleLogOut}>
+   <Button onClick={handleLogOut}>
       logout
     </Button>
   </div>

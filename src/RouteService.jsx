@@ -2,7 +2,7 @@ import React from 'react'
 import { Route, Routes } from 'react-router-dom';
 import Signup from './components/Signup';
 import Login from './components/Login';
-import Welcome from './components/Welcome';
+import Welcome from './pages/Welcome';
 
 const RouteService = () => {
   return (
