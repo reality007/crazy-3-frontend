@@ -1,25 +1,12 @@
-import { Button } from '@mui/material'
-import React, { useEffect } from 'react'
-import { useNavigate } from 'react-router-dom';
+import React from 'react'
+import Navbar from '../components/Navbar';
 
 
 const Welcome = () => {
-  
-  const navigate = useNavigate();
-
-const handleLogOut=()=>{
-
-  navigate("/login");
-
-
-}
-
 
 return(
   <div>
-   <Button onClick={handleLogOut}>
-      logout
-    </Button>
+    <Navbar/>
   </div>
 )
 
